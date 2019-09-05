@@ -1,0 +1,48 @@
+{
+  "name": "app-cards",
+  "version": "1.1.0",
+  "description": "Server-side Rendering React from Scratch!",
+  "main": "index.js",
+  "engines": {
+    "node": "8.10.0",
+    "npm": "5.7.1"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "pack": "webpack --config webpack.config.js",
+    "babel": "babel src -d build",
+    "build": "npm run pack && npm run babel",
+    "start-dev": "npm run build && npm run start"
+  },
+  "author": "Diana Gerasimchuk",
+  "license": "CC BY 4.0",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "1.19.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "5.0.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-minify-webpack-plugin": "0.3.1",
+    "browserslist": "4.6.6",
+    "caniuse-lite": "1.0.30000989",
+    "css-loader": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "sass-loader": "7.1.0",
+    "style-loader": "1.0.0",
+    "terser-webpack-plugin": "1.4.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
